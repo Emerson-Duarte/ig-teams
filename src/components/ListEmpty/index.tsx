@@ -3,7 +3,7 @@ import * as Styles from './styles';
 type Props = {
   message: string;
 }
-export default function ListEmpty({ message }: Props) {
+export function ListEmpty({ message }: Props) {
   return (
     <Styles.Container>
       <Styles.Message>

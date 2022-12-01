@@ -4,7 +4,8 @@ import * as Styles from "screens/Groups/styles";
 import { Header } from "components/Header";
 import { Highlight } from "components/Highlight";
 import { GroupCard } from "components/GroupCard";
-import ListEmpty from "components/ListEmpty";
+import { ListEmpty } from "components/ListEmpty";
+import { Button } from "components/Button";
 
 export default function Groups() {
   const [groups, setGroups] = useState<string[]>(['teste']);
@@ -22,6 +23,7 @@ export default function Groups() {
         contentContainerStyle={groups.length === 0 && { flex: 1 }}
         ListEmptyComponent={() => <ListEmpty message="Você ainda não possui nenhuma turma cadastrada!" /> }
       />
+      <Button title="Criar Nova Turma" />
     </Styles.Container>
   );
 }
